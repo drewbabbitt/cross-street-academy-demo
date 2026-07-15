@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alice&family=Sofia+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "School", "name": "Cross Street Academy", "url": "https://www.crossstreetacademy.com", "logo": "https://www.crossstreetacademy.com/assets/img/logo-horz-red.webp", "telephone": "+1-475-477-0101", "email": "Info@CrossStreetAcademy.com", "description": "Live, accredited online Christian school for grades 6-12.", "sameAs": ["https://www.facebook.com/CrossStreetDaily"], "address": {"@type": "PostalAddress", "addressRegion": "CT", "addressCountry": "US"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.crossstreetacademy.com/"}, {"@type": "ListItem", "position": 2, "name": "Graduation Requirements", "item": "https://www.crossstreetacademy.com/graduation-requirements.html"}]}</script>
@@ -23,41 +23,72 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
+ <div class="topbar">
+  <div class="wrap">
+   <p><a href="tel:+14754770101">(475) 477-0101</a><span class="email"> &middot; <a href="mailto:Info@CrossStreetAcademy.com">Info@CrossStreetAcademy.com</a></span></p>
+   <a class="login" href="https://crossstreet.ignitiaschools.com" rel="noopener">Student Login</a>
+  </div>
+ </div>
  <div class="wrap bar">
   <a class="brand" href="index.html" aria-label="Cross Street Academy home"><img src="assets/img/logo-horz-red.webp" alt="Cross Street Academy" width="190" height="47"></a>
   <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="document.body.classList.toggle('nav-open');document.querySelector('.nav').classList.toggle('open');this.setAttribute('aria-expanded',document.querySelector('.nav').classList.contains('open'))"><span></span></button>
   <nav class="nav" aria-label="Main">
    <a href="admissions.html">Admissions</a><a href="tuition.html">Tuition</a><a href="teachers.html">Our Teachers</a><a href="curriculum.html">Curriculum</a><a href="how-it-works.html">How It Works</a><a href="faq.html">FAQ</a><a href="resources.html">Resources</a>
-   <a href="https://crossstreet.ignitiaschools.com" rel="noopener">Login</a>
    <a class="btn btn-primary btn-sm" href="contact.html">Get Started</a>
   </nav>
  </div>
 </header>
 <main id="main">
-<section class="page-hero"><div class="wrap"><p class="eyebrow">Graduation Requirements</p><h1>Credits required to graduate</h1><p class="lead">Below are the credits required to graduate from high school at Cross Street Academy.</p></div></section>
+<section class="page-hero"><div class="wrap">
+ <p class="eyebrow">Academics</p>
+ <h1>Credits required to graduate</h1>
+ <p class="lead">Cross Street Academy graduates complete a minimum of 22 credits across ten subject areas. The chart below shows exactly what is required &mdash; and how credit toward a diploma is earned.</p>
+</div></section>
 <section class="section">
- <div class="wrap split">
+ <div class="wrap split start">
   <div>
    <h2>CSA&rsquo;s required graduation credits</h2>
    <p class="lead">22 credits minimum*</p>
-   <div class="table-scroll"><table class="data"><thead><tr><th>Subject</th><th>Credits</th></tr></thead><tbody>
-   <tr><td>English</td><td>4</td></tr><tr><td>Math</td><td>4</td></tr><tr><td>History</td><td>3</td></tr><tr><td>Science</td><td>3</td></tr><tr><td>Bible</td><td>2</td></tr><tr><td>Foreign Language</td><td>2</td></tr><tr><td>Fine/Practical Arts</td><td>1</td></tr><tr><td>Physical Education</td><td>1</td></tr><tr><td>Health</td><td>0.5</td></tr><tr><td>Electives</td><td>1.5</td></tr>
-   <tr><td><strong>Total</strong></td><td><strong>22</strong></td></tr>
-   </tbody></table></div>
-   <p class="mt-2"><em>*Credit earned in any course requires a final course grade of 60 or greater.</em></p>
+   <div class="rule-double" aria-hidden="true"></div>
+   <div class="table-scroll">
+    <table class="data">
+     <thead><tr><th scope="col">Subject</th><th scope="col" class="num">Credits</th></tr></thead>
+     <tbody>
+      <tr><td>English</td><td class="num">4</td></tr>
+      <tr><td>Math</td><td class="num">4</td></tr>
+      <tr><td>History</td><td class="num">3</td></tr>
+      <tr><td>Science</td><td class="num">3</td></tr>
+      <tr><td>Bible</td><td class="num">2</td></tr>
+      <tr><td>Foreign Language</td><td class="num">2</td></tr>
+      <tr><td>Fine/Practical Arts</td><td class="num">1</td></tr>
+      <tr><td>Physical Education</td><td class="num">1</td></tr>
+      <tr><td>Health</td><td class="num">0.5</td></tr>
+      <tr><td>Electives</td><td class="num">1.5</td></tr>
+      <tr class="total"><td>Total</td><td class="num">22</td></tr>
+     </tbody>
+    </table>
+   </div>
+   <p class="small muted mt-2"><em>*Credit earned in any course requires a final course grade of 60 or greater.</em></p>
   </div>
-  <div>
-   <h3>Graduation requirement</h3>
-   <p>Students that meet Cross Street Academy&rsquo;s graduation requirements and fulfill their state&rsquo;s graduation requirements will receive a diploma. It is the parent&rsquo;s responsibility to research the requirements of their state and ensure they are met. Each college/university is unique in what they are looking for, so we recommend contacting ones you are interested in to determine what, if any, additional admission requirements exist. For the Bible requirement, students must take at least .5 credit in three separate school years.</p>
+  <div class="prose">
+   <h3>Earning a diploma</h3>
+   <p>Students who meet Cross Street Academy&rsquo;s graduation requirements and fulfill their state&rsquo;s graduation requirements receive a diploma. Because requirements vary from state to state, it is the parent&rsquo;s responsibility to research their state&rsquo;s requirements and ensure they are met.</p>
+   <p>Each college and university is also unique in what it looks for, so we recommend contacting the schools your student is interested in to determine what additional admission requirements, if any, exist.</p>
+   <h3>The Bible requirement</h3>
+   <p>To satisfy the Bible requirement, students must take at least .5 credit in three separate school years.</p>
    <h3>Earning credit and passing classes</h3>
-   <p>A student must receive a D- or above to pass a class. If a student receives a D+ through a D-, the student will receive high school credit and may be placed in the next level. However, many colleges do not recognize any grade below a C- for admissions purposes in any class. In some cases (math and Spanish classes, specifically), a student with a grade below a C- will need to remediate the course at parent expense to demonstrate proficiency in the skills required for success at the next level.</p>
-   <p><a class="btn btn-ghost btn-sm" href="assets/pdf/HS-class-chart-2.pdf">High School Course Flow (PDF)</a></p>
+   <p>A student must receive a D- or above to pass a class. A student who earns a D+ through a D- will receive high school credit and may be placed in the next level. Families should note, however, that many colleges do not recognize any grade below a C- for admissions purposes in any class. In some cases &mdash; math and Spanish classes, specifically &mdash; a student with a grade below a C- will need to remediate the course at parent expense to demonstrate proficiency in the skills required for success at the next level.</p>
+   <p class="mt-3"><a class="btn btn-ghost btn-sm" href="assets/pdf/HS-class-chart-2.pdf">High School Course Flow (PDF)</a></p>
   </div>
  </div>
 </section>
 </main>
 <footer class="site-footer">
  <div class="wrap">
+  <div class="footer-id">
+   <div class="ornament" aria-hidden="true"></div>
+   <p>Cross Street Academy &middot; Grades 6&ndash;12 &middot; Online</p>
+  </div>
   <div class="cols">
    <div class="brandcol">
     <img src="assets/img/logo-horz-red.webp" alt="Cross Street Academy">
